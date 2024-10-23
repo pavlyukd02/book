@@ -11,6 +11,7 @@ const Header = () => {
                     <h1 className='font-bold text-[64px]'>Історичне спасське</h1>
                 </div>
                 <img src={landscape} className='' alt="" />
+                <div>gello niggers</div>
             </div>
         </div>
     )
