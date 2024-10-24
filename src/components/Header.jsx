@@ -4,15 +4,20 @@ import landscape from '../assets/landscape.png'
 
 const Header = () => {
     return (
-        <div>
-            <div className='flex    '>
-                <img className='mix-blend-multiply w-[350px] h-[360px]' src={baroccoImg} alt="" />
-                <div>
-                    <h1 className='font-bold text-[64px]'>Історичне спасське</h1>
+        <div className='px-10 '>
+            <div className='flex justify-between items-center '>
+                <img className='mix-blend-multiply w-[300px] h-[360px]' src={baroccoImg} alt="" />
+
+                <div className=''>
+                    <h1 className='font-bold abosolute text-[64px]'>Історичне спасське</h1>
                 </div>
-                <img src={landscape} className='' alt="" />
-                <div>gello niggers</div>
+                <img src={landscape} className='w-[30%] h-[75%]' alt="" />
+                <div className="border-l-4 border-gray-500 h-32"></div>
+
+                
+
             </div>
+            
         </div>
     )
 }
