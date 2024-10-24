@@ -8,7 +8,7 @@ function App() {
 
   return (
     <main
-      className="min-h-screen p-8"
+      className="min-h-screen"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       
