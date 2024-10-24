@@ -1,25 +1,34 @@
-import React from 'react'
-import baroccoImg from '../assets/barocco.svg'
-import landscape from '../assets/landscape.png'
+import React from 'react';
+import baroccoImg from '../assets/barocco.png';
+import landscape from '../assets/landscape.png';
 
 const Header = () => {
     return (
-        <div className='px-10 '>
-            <div className='flex justify-between items-center '>
-                <img className='mix-blend-multiply w-[300px] h-[360px]' src={baroccoImg} alt="" />
+        <div className='relative px-4 sm:px-6 lg:px-8'>
+            {/* Контейнер для изображений */}
+            <div className='flex justify-between items-center'>
+                {/* Изображение с барокко. Используем flex-initial, чтобы оно не занимало больше места. */}
+                <img 
+                    className='w-[250px] mix-blend-multiply' 
+                    src={baroccoImg} 
+                    alt="Barocco" 
+                />
+                <h1 className='flex-1 pacifico-regular font-normal text-[32px] sm:text-[48px] md:text-[48px] uppercase relative '>
+                    Історичне спасське
+                </h1>
+             
 
-                <div className=''>
-                    <h1 className='font-bold abosolute text-[64px]'>Історичне спасське</h1>
-                </div>
-                <img src={landscape} className='w-[30%] h-[75%]' alt="" />
-                <div className="border-l-4 border-gray-500 h-32"></div>
-
-                
-
+                {/* Ландшафтное изображение. Используем flex-initial для контроля размеров. */}
+                <img 
+                    className='w-[500px] absolute right-2 top-4' 
+                    src={landscape} 
+                    alt="Landscape" 
+                />
             </div>
-            
-        </div>
-    )
-}
 
-export default Header
+            <hr className='bg-white h-1 rounded-md ' />
+        </div>
+    );
+};
+
+export default Header;
