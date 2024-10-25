@@ -44,19 +44,20 @@ const VideoSection = () => {
 
   return (
     <section className='min-h-screen flex justify-center items-center relative'>
-      <div className='relative w-full h-[800px]'>
+      <div className='relative w-full h-[800px] md:h-[600px]'>
         {/* Само видео */}
         <video
-          className="w-full h-full object-cover block border-0 outline-none"
+          className="w-full h-full object-cover block border-0 outline-none rounded-xl"
           src={videoSrc}
           ref={videoRef}
           autoPlay
           muted
           loop
         />
-        
+
         {/* Наложение затемнения */}
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
+        <div className='absolute inset-0  text-white uppercase flex justify-center'>Улюблене Спасське</div>
       </div>
     </section>
   );
