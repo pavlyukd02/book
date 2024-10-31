@@ -57,7 +57,10 @@ const VideoSection = () => {
 
         {/* Наложение затемнения */}
         <div className="absolute inset-0 bg-black opacity-50 rounded-xl"></div>
-        <div className='absolute inset-0  text-white uppercase flex justify-center'>Улюблене Спасське</div>
+        <div className='absolute inset-0 flex-col  items-center text-white  flex justify-center gap-4'>
+          <h1 className='poppins-bold text-[40px] uppercase '>Улюблене Спаське</h1>
+          <p className='poppins-bold uppercase text-[20px] '  >та його стародавня історія</p>
+        </div>
       </div>
     </section>
   );

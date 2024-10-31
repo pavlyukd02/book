@@ -10,6 +10,8 @@ import bgImg from './assets/bg.png'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import NewsPages from './pages/NewsPages';
+import Footer from './components/Footer';
+import NewsList from './containers/NewsList';
 
 
 function App() {
@@ -28,8 +30,10 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/news" element={<NewsPages />} />
+          
 
         </Routes>
+        <Footer />
       </BrowserRouter>
 
 
