@@ -38,7 +38,7 @@ const VideoSection = () => {
           videoRef.current.pause();
         }
       },
-      markers: true, // Маркеры для дебага (можно удалить в продакшене)
+      markers: false, // Маркеры для дебага (можно удалить в продакшене)
     });
   }, []);
 

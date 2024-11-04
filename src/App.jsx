@@ -12,6 +12,9 @@ import Home from './pages/Home';
 import NewsPages from './pages/NewsPages';
 import Footer from './components/Footer';
 import NewsList from './containers/NewsList';
+import AboutAthors from './pages/AboutAthors';
+import Media from './pages/Media';
+import NewsDetails from './pages/NewsDetails';
 
 
 function App() {
@@ -30,10 +33,15 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/news" element={<NewsPages />} />
+          <Route path='/about' element={<AboutAthors />} />
+          <Route path='/videos' element={<Media />} />
+          <Route path='/news/:id' element={<NewsDetails />} />
           
+         
+
 
         </Routes>
-        <Footer />
+        <Footer className='mt-auto'/>
       </BrowserRouter>
 
 

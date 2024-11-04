@@ -12,11 +12,11 @@ const AboutBook = () => {
 
 
                 {/* Центральный контейнер с текстом и картинкой */}
-                <div className='flex flex-col md:flex-row items-center mt-[125px] ml-[140px] align-middle justify-center gap-8'>
+                <div className='flex flex-col md:flex-row items-center  ml-[140px] align-middle justify-center gap-8'>
 
                     {/* Текстовый блок */}
                     <div className='text-center md:text-left max-w-lg'>
-                        <h1 className='poppins-bold text-[28px]'>
+                        <h1 className='poppins-bold text-[28px] px-4'>
                             Село Спаське: Історія крізь призму епох
                         </h1>
                         <div className='p-[1px] rounded-full bg-[#E50A0A] mb-8 mt-3'></div>
