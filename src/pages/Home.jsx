@@ -7,8 +7,10 @@ import News from '../components/News';
 
 const Home = () => {
     return (
+        
         <section>
-            
+            <Header />
+            <Navbar />
            
             <AboutBook />
             <Video />
