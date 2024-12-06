@@ -28,8 +28,8 @@ const NewsList = () => {
   const latestNews = news.slice(0, 3);
 
   return (
-    <div>
-      <div className="flex flex-wrap gap-[80px] justify-center ">
+    <div className='px-4 md:px-8'>
+      <div className="flex flex-wrap  md:gap-[80px] justify-center">
         {latestNews.map((item) => (
           <NewsCard
             key={item.id}

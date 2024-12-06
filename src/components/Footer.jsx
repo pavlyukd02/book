@@ -9,10 +9,10 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className=''>
+    <footer className='mt-5'>
       <div className='bg-black opacity-80 p-11'>
-        <div className='flex justify-between items-center text-white'>
-          <div className='flex flex-col gap-4'>
+        <div className='flex justify-between items-center  text-white  flex-col md:flex-row md:gap-0 gap-[15px] text-center'>
+          <div className='flex flex-col gap-4 justify-center items-center px-4'>
             <div className='uppercase poppins-medium'>
               Історичне Спасське
             </div>
@@ -20,19 +20,19 @@ const Footer = () => {
               © 2024. Цей проєкт має відкриту ліцензію CC BY 4.0.
             </div>
           </div>
-          <div>
-            <div className='flex flex-col mr-[150px]'>
+          <div className=''>
+            <div className='flex justify-center align-middle items-center flex-col mr:0 md:mr-[250px]'>
               <h1 className='uppercase'>Контакти:</h1>
-              <div className='text-[14px] mt-1 ml-2'>
+              <div className='text-[14px] flex items-center  flex-col'>
                 <p>індекс: 39081,</p>
-                <p>вул. Богдана Хмельницького 22,</p>
+                <p className>вул. Богдана Хмельницького 22,</p>
                 <p>пошта: test@gmail.com</p>
               </div>
             </div>
           </div>
           <div>
-            <div>Соціальні мережі</div>
-            <div className='flex flew-row w-[150px] h-[50px] gap-4 mt-4'>
+            <div className=' flex  justify-center  items-center'>Соціальні мережі</div>
+            <div className='flex flew-row w-[150px] h-[50px] gap-4 mt-4 '>
               <div>
                 <img src={facebook} alt="Facebook" />
               </div>
