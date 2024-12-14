@@ -5,14 +5,14 @@ const NewsCard = ({ image, title, shortText, handleClick, date }) => {
 
   return (
     <div
-      className='mt-[60px] mb-[20px] flex flex-col w-full sm:w-[320px] h-[400px] rounded-[15px] bg-[#C37F3B] shadow-lg cursor-pointer transition hover:scale-105 relative'
+      className='mt-[60px] mb-[20px] flex flex-col w-full sm:w-[320px] h-[550px] rounded-[15px] bg-[#CE965E]  shadow-lg drop-shadow-2xl cursor-pointer transition hover:scale-105 relative'
       onClick={handleClick}
     >
       {/* Фото новости */}
       <img
         src={image}
         alt="news"
-        className='w-full h-[50%] object-cover rounded-t-[15px]'
+        className='w-full h-[55%] object-cover rounded-t-[15px]'
         onError={(e) => {
           e.target.src = 'https://via.placeholder.com/320x200?text=Изображение+не+найдено'; // Заменяем на плейсхолдер, если изображение не загружается
         }}
@@ -20,10 +20,10 @@ const NewsCard = ({ image, title, shortText, handleClick, date }) => {
 
       {/* Короткий текст новости */}
       <div className='p-4 flex flex-col gap-2 h-[50%]'>
-        <h3 className='poppins-bold text-[15px] text-ellipsis pb-1 text-black'>
+        <h3 className='poppins-bold text-[15px] text-ellipsis pb-1 text-center text-black'>
           {title}
         </h3>
-        <hr />
+        <div className="h-[1px] bg-[#6e1d1d] "></div>
         <p className='poppins-regular text-[13px] text-black tracking-wider overflow-hidden text-pretty'>
           {shortText}
         </p>

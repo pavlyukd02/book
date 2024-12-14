@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import videoSrc from '../assets/videoBook2.mp4'; // Импорт видеофайла
+import videoSrc from '../assets/videoEdit.mp4'; // Импорт видеофайла
 
 // Регистрация плагина ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -43,7 +43,7 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <section className='min-h-screen flex justify-center items-center relative'>
+    <section className='my-20 flex justify-center items-center relative'>
       <div className='relative w-full h-[800px] md:h-[600px]'>
         {/* Само видео */}
         <video

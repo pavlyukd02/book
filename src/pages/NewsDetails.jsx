@@ -49,7 +49,7 @@ const NewsDetails = () => {
         <img
           src={selectedNews.imgUrl}
           alt={selectedNews.title}
-          className="mb-6 w-3/4 rounded-lg shadow-lg"
+          className="mb-6 w-2/4 rounded-lg shadow-lg"
         />
       )}
       <h2 className="text-3xl font-semibold mb-4">{selectedNews.title}</h2>

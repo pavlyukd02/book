@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import bgImg from './assets/bg.png';
+import bgImg from './assets/bg1.png';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';

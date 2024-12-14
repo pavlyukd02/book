@@ -35,7 +35,7 @@ const NewsPages = () => {
       <Header />
       <Navbar />
       
-      <div className='flex justify-center text-black uppercase mt-10 poppins-semibold text-[28px]'>Новини</div>
+      <div className='flex justify-center text-black uppercase mt-10 poppins-semibold text-[36px]'>Усі новини</div>
 
       <div className="flex flex-col gap-[80px] justify-center mt-10">
         {newsList.map((item) => (
